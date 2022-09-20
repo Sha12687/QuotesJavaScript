@@ -1,0 +1,84 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Cedarville Cursive', cursive;
+}
+   body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background: #173376;
+   }
+.container{
+    width: 650px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #07aaf3
+}
+.inner{  
+    height: 350px;
+    width: 500px;
+    background: white;
+}.triangle-topright {
+    float: right;
+  width: 100px;
+  height: 100px;
+  transform: rotateZ(45deg);
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  line-height: 64px;
+}
+
+.triangle-topright:before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 0;
+  height: 0;
+  transform: rotateZ(-45deg);
+  border-right: 100px solid gray;
+  border-bottom: 100px solid transparent;
+}
+.image{
+    margin-left: 0px;
+    margin-bottom: 9px;
+    transform: rotateZ(-40deg);
+}
+   
+.box{
+    height: 350px;
+    width: 500px
+}
+.fa-quote{
+    margin: 35px;
+    color: #e8edef;
+    font-size: 39px;
+}
+.text{
+    height: 310px;
+}
+.quote{
+    margin-left: 40px;
+    font-size: 20px;
+    margin-right: 40px;
+}
+.author{
+    float: right;
+    /* position: inherit; */
+    margin-top: 90px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+.newQ{
+    height: 40px;
+    background: #00b5ff;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
